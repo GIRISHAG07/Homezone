@@ -1,0 +1,164 @@
+.service-one__icon.dimon-icon-laptop:before {
+    content: "\e901";
+    transform: rotate(0);
+    transition: transform 0.3s ease;
+}
+.service-one__icon.dimon-icon-laptop:hover:before {
+    transform: rotate(360deg);
+}
+
+.dimon-icon-presentation:before {
+    content: "\e903";
+    transform: rotate(0) scale(1);
+    transition: transform 0.3s ease;
+}
+.dimon-icon-presentation:hover:before {
+    transform: rotate(45deg) scale(1.2);
+}
+.dimon-icon-target:before {
+    content: "\e905";
+    transform: rotate(0) scale(1);
+    transition: transform 0.3s ease;
+}
+
+.dimon-icon-target:hover:before {
+    animation: rotateAndScaleBack 0.5s forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotateAndScaleBack {
+    0% {
+        transform: rotate(0) scale(1);
+    }
+    50% {
+        transform: rotate(-45deg) scale(0.8);
+    }
+    100% {
+        transform: rotate(0) scale(1);
+    }
+}
+.dimon-icon-visualization:before {
+    content: "\e907";
+    transform: rotate(0) scale(1);
+    transition: transform 0.3s ease;
+}
+
+.dimon-icon-visualization:hover:before {
+    animation: spinAndScale 0.5s forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spinAndScale {
+    0% {
+        transform: rotate(0) scale(1);
+    }
+    50% {
+        transform: rotate(360deg) scale(1.2);
+    }
+    100% {
+        transform: rotate(0) scale(1);
+    }
+}
+.dimon-icon-data1:before {
+    content: "\e908";
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.dimon-icon-data1:hover:before {
+    animation: moveAnimation 0.5s forwards;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+@keyframes moveAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(600px);
+    }
+}
+
+.dimon-icon-data:before {
+    content: "\e909";
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+.dimon-icon-data:hover:before {
+    animation: moveAnimation1 0.5s both;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+  
+}
+@keyframes moveAnimation1 {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(200px);
+    }
+}
+
+.pricing-one__single {
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing-one__single:hover:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-image:linear-gradient(gray,black,black);
+    z-index: 1;
+    border-radius: 20px;
+    transition: width 5s ease;
+}
+.pricing-one__single:hover:after {
+    width: 100%;
+}
+.pricing-one__single h3,
+.pricing-one__single p,
+.pricing-one__single ul,
+.pricing-one__single .thm-btn,
+.pricing-one__single .tag-line {
+    color: magenta;
+    position: relative;
+    z-index: 2;
+    transition: color 3s ease;
+}
+/* .service-one__icon.dimon-icon-laptop:before {
+    content: "\e901";
+    
+} */
+.fact-one__single:before {
+
+    transform: rotate(0);
+    transition: transform 0.3s ease;
+}
+.fact-one__single:hover:before {
+    transform: rotate(360deg);
+    background-image: linear-gradient(40deg, black,blue);
+}
+/* .banner-one__shape-1{
+
+    z-index: 100;
+} */
+.banner-one__shape-1:hover{
+    background-image: linear-gradient(40deg, black,blue);
+    z-index: 100;
+}
+.banner-one__shape-3:hover{
+    background-image: linear-gradient(40deg, black,blue);
+    z-index: 100;
+}
+.app-shot-one__carousel.owl-theme.owl-carousel.owl-loaded.owl-drag{
+ padding-top: -100px;
+}
+.inner-block{
+    background-image: linear-gradient(linear, left top, left bottom,from(rgba(50,50,50,0.8)), to(rgba(80,80,80,0.2)));
+}
